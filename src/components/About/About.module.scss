@@ -1,0 +1,130 @@
+.aboutWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between;
+  height: 500px;
+
+  .photo {
+    position: absolute;
+    width: 500px;
+    right: 0;
+    border-radius: 10px;
+
+    @media all and (max-width: 1440px) {
+      top: 10px;
+      right: -130px;
+      width: 400px;
+    }
+
+    @media all and (max-width: 1024px) {
+      top: -20px;
+    }
+  }
+
+  .header {
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+  }
+
+  .body {
+    z-index: 1;
+    margin-left: 40px;
+    .position {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      color: var(--white-color);
+      background-color: var(--green-color);
+
+      @media all and (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+
+    .header {
+      margin-bottom: 20px;
+
+      @media all and (max-width: 1024px) {
+        font-size: 12px;
+      }
+
+      @media all and (max-width: 768px) {
+        font-size: 9px;
+      }
+    }
+
+    .description {
+      background-color: var(--light-gray-color);
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 480px;
+      color: var(--black-color);
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    .logos {
+      display: flex;
+      gap: 20px;
+
+      .logoCircle {
+        overflow: hidden;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 50px;
+        top: 50px;
+      }
+
+      @media all and (max-width: 1024px) {
+        gap: 15px;
+      }
+
+      @media all and (max-width: 768px) {
+        gap: 10px;
+      }
+    }
+
+    @media all and (max-width: 1440px) {
+      margin-left: 0;
+    }
+  }
+
+  .footer {
+    gap: 20px;
+    display: flex;
+    z-index: 1;
+  }
+}
+
+.work {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+
+  .experience {
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  .introduce {
+    max-width: 450px;
+    line-height: 1.2;
+    opacity: 0.7;
+
+    @media all and (max-width: 1440px) {
+      max-width: 100%;
+    }
+  }
+
+  @media all and (max-width: 1440px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 40%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 15px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
